@@ -1,0 +1,73 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hostWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.listTagWrapper {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.listTag {
+  background-color: $background-primary;
+  color: $color_2;
+  text-align: center;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px 10px;
+}
+
+.hostWrapperInfo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  @include mobile {
+    justify-content: center;
+    align-items: center;
+  }
+
+  > p {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    height: 66px;
+    line-height: 142.6%;
+    text-align: right;
+    width: 63px;
+  }
+}
+
+.hostImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  margin-left: auto;
+}
+
+.HostRatingInfoWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  @include mobile {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;  }
+}

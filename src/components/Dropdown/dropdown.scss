@@ -1,0 +1,132 @@
+.dropdownStyleAbout {
+  .buttonDropdown {
+    background-color: $primary;
+    border: none;
+    color: $color_2;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0;
+    margin: 20px auto;
+    width: 80%;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonText {
+    margin-right: auto;
+  }
+
+  .dropdownContent {
+    background-color: $background-color_3;
+    padding: 20px 10px;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 0px 0px 5px 5px;
+    margin-inline: auto;
+  }
+
+  .faChevronDown {
+    margin-left: auto;
+    transition: transform 0.2s ease-in-out;
+    color: $color_2 !important;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .dropdownWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+
+// .dropdownWrapperLogement {
+//   display: flex;
+//   justify-content: space-between;
+//   max-width: 1200px;
+//   margin: 0 auto;
+
+//   .dropdown {
+//     max-width: 600px;
+//     width: 100%;
+//   }
+
+//   .buttonDropdown {
+//     width: 90%;
+//   }
+// }
+
+.dropdownWrapperLogement {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @include mobile {
+    flex-direction: column;
+  }
+  
+  .dropdownStyleLogement {
+    width: 50%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .dropdownStyleLogement:first-of-type {
+    margin-right: 10%;
+  }
+  
+  .buttonDropdown {
+    width: 100%;
+  }
+
+  .buttonDropdown {
+    height: 50px;
+    background-color: $primary;
+    border: none;
+    color: $color_2;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .dropdownContent {
+    background-color: $background-color_3;
+    padding: 20px 10px;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 5px 5px;
+    margin-inline: auto;
+  }
+
+  .faChevronDown {
+    margin-left: auto;
+    transition: transform 0.2s ease-in-out;
+    color: $color_2 !important;
+  }
+}

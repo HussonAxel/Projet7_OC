@@ -1,0 +1,15 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
+@import "./base/base.scss";
+
+@import "../components/Dropdown/dropdown.scss";
+@import "../components/Banner/Banner.scss";
+@import "../components/Carrousel/Carrousel.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Header/Header.scss";
+@import "../components/LocationGalery/LocationGalery.scss";
+@import "../components/Logement/Logement.scss";
+@import "../components/StarRating/StarRating.scss";
+@import "../components/Error/Error.scss";
+

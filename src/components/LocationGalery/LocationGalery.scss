@@ -1,0 +1,85 @@
+.section {
+  width: 90%;
+  background: #f7f7f7;
+  border-radius: 25px;
+  margin: 0 auto;
+  @include tablet {
+    width: 90%;
+    border-radius: 0;
+  }
+  @include mobile {
+    background: none;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin-inline: 50px;
+  padding-block: 50px;
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-inline: 10px;
+    padding-block: 20px;
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+    margin-inline: 0;
+    padding-block: 20px;
+  }
+}
+
+.item {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 340px;
+  background-size: cover;
+  position: relative;
+  &::after {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, rgba(71, 71, 71, 0.8));
+  }
+  @include tablet {
+    height: 250px;
+  }
+  @include mobile {
+    height: 200px;
+  }
+  &:hover {
+    border: 2px solid $primary;
+    transform: scale(1.05);
+    transition: transform 0.1s ease-out;
+  }
+}
+
+.title {
+  color: $color_2;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  @include tablet {
+    font-size: 16px;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+}

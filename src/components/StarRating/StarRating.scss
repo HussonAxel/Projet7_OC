@@ -1,0 +1,16 @@
+.faStarUnchecked {
+  color: $color_3 !important;
+}
+.faStarChecked {
+  color: $primary;
+}
+.faStar {
+  font-size: 24px;
+  cursor: pointer;
+  gap: 25px;
+  margin-inline: 5px;
+  @include mobile
+  {
+    font-size: 14px;
+  }
+}
