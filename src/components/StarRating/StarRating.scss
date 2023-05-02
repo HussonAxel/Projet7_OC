@@ -1,5 +1,5 @@
 .faStarUnchecked {
-  color: $color_3 !important;
+  color: $tertiary !important;
 }
 .faStarChecked {
   color: $primary;
@@ -9,8 +9,7 @@
   cursor: pointer;
   gap: 25px;
   margin-inline: 5px;
-  @include mobile
-  {
+  @include mobile {
     font-size: 14px;
   }
 }

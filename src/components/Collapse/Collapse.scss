@@ -1,8 +1,8 @@
-.dropdownStyleAbout {
-  .buttonDropdown {
+.CollapseStyleAbout {
+  .buttonCollapse {
     background-color: $primary;
     border: none;
-    color: $color_2;
+    color: $secondary;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
@@ -19,8 +19,9 @@
     margin-right: auto;
   }
 
-  .dropdownContent {
-    background-color: $background-color_3;
+  .CollapseContent {
+    background-color: $background-tertiary;
+    color: $primary;
     padding: 20px 10px;
     text-align: left;
     margin-top: -20px;
@@ -33,21 +34,21 @@
   .faChevronDown {
     margin-left: auto;
     transition: transform 0.2s ease-in-out;
-    color: $color_2 !important;
+    color: $secondary !important;
   }
 
   .rotate {
     transform: rotate(180deg);
   }
 
-  .dropdown {
+  .Collapse {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
 
-  .dropdownWrapper {
+  .CollapseWrapper {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -55,50 +56,34 @@
   }
 }
 
-// .dropdownWrapperLogement {
-//   display: flex;
-//   justify-content: space-between;
-//   max-width: 1200px;
-//   margin: 0 auto;
-
-//   .dropdown {
-//     max-width: 600px;
-//     width: 100%;
-//   }
-
-//   .buttonDropdown {
-//     width: 90%;
-//   }
-// }
-
-.dropdownWrapperLogement {
+.CollapseWrapperLogement {
   display: flex;
   justify-content: space-between;
   width: 100%;
   @include mobile {
     flex-direction: column;
   }
-  
-  .dropdownStyleLogement {
+
+  .CollapseStyleLogement {
     width: 50%;
     @include mobile {
       width: 100%;
     }
   }
-  
-  .dropdownStyleLogement:first-of-type {
+
+  .CollapseStyleLogement:first-of-type {
     margin-right: 10%;
   }
-  
-  .buttonDropdown {
+
+  .buttonCollapse {
     width: 100%;
   }
 
-  .buttonDropdown {
+  .buttonCollapse {
     height: 50px;
     background-color: $primary;
     border: none;
-    color: $color_2;
+    color: $secondary;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 500;
@@ -114,19 +99,20 @@
     transform: rotate(180deg);
   }
 
-  .dropdownContent {
-    background-color: $background-color_3;
+  .CollapseContent {
+    background-color: $background-tertiary;
     padding: 20px 10px;
     text-align: left;
     margin-top: -20px;
     margin-bottom: 20px;
     border-radius: 0px 0px 5px 5px;
     margin-inline: auto;
+    color: $primary;
   }
 
   .faChevronDown {
     margin-left: auto;
     transition: transform 0.2s ease-in-out;
-    color: $color_2 !important;
+    color: $secondary !important;
   }
 }

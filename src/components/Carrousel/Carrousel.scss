@@ -39,7 +39,7 @@
   padding: 1rem;
   border: none;
   cursor: pointer;
-  color: $color_2;
+  color: $secondary;
   &:focus {
     outline: none;
   }
@@ -59,6 +59,6 @@
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  color: $color_2;
+  color: $secondary;
   font-size: 20px;
 }

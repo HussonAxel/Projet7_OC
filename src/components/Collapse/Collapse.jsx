@@ -2,23 +2,23 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-export const Dropdown = ({ option, menuName, className }) => {
+export const Collapse = ({ option, menuName, className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleDropdown = () => {
+  const handleCollapse = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className={`dropdown ${className}`}>
-      <button onClick={handleDropdown} className="buttonDropdown">
+    <div className={`Collapse ${className}`}>
+      <button onClick={handleCollapse} className="buttonCollapse">
         <span className="buttonText">{menuName}</span>
         <FontAwesomeIcon
           icon={faChevronDown}
           className={isOpen ? "faChevronDown rotate" : "faChevronDown"}
         />
       </button>
-      {isOpen && <p className="dropdownContent">{option}</p>}
+      {isOpen && <div className="CollapseContent">{option}</div>}
     </div>
   );
 };

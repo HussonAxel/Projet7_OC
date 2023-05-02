@@ -7,11 +7,19 @@ export const StarRating = ({ rating }) => {
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
       starArray.push(
-        <FontAwesomeIcon key={i} icon={faStar} className="faStarChecked faStar" />
+        <FontAwesomeIcon
+          key={i}
+          icon={faStar}
+          className="faStarChecked faStar"
+        />
       );
     } else {
       starArray.push(
-        <FontAwesomeIcon key={i} icon={faStar} className="faStarUnchecked faStar" />
+        <FontAwesomeIcon
+          key={i}
+          icon={faStar}
+          className="faStarUnchecked faStar"
+        />
       );
     }
   }

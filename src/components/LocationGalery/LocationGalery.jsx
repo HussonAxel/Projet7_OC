@@ -3,7 +3,6 @@ import logements from "../../data/logements.json";
 import { Link } from "react-router-dom";
 
 export const LocationGalery = () => {
-  console.log(logements);
   return (
     <section className="section">
       <div className="container">
@@ -13,7 +12,7 @@ export const LocationGalery = () => {
               className="item"
               style={{ backgroundImage: `url(${logement.cover})` }}
             >
-                <p className="title">{logement.title}</p>
+              <p className="title">{logement.title}</p>
             </div>
           </Link>
         ))}
@@ -21,4 +20,3 @@ export const LocationGalery = () => {
     </section>
   );
 };
-

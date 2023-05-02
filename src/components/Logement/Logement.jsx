@@ -2,21 +2,26 @@ import { StarRating } from "../StarRating/StarRating";
 import logements from "../../data/logements.json";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { Dropdown } from "../Dropdown/Dropdown";
+import { useEffect } from "react";
 
+import { Collapse } from "../Collapse/Collapse";
 import { Carrousel } from "../Carrousel/Carrousel";
 
 export const Logement = () => {
   const navigate = useNavigate();
   const { id } = useParams();
-
   const logement = logements.find((logement) => logement.id === id);
 
+  useEffect(() => {
+    if (!logement) {
+      navigate("/404");
+    }
+  }, [logement, navigate]);
+
   if (!logement) {
-    console.log("test");
-    navigate("/404");
     return null;
   }
+
   const hostImage = logement.host.picture;
 
   return (
@@ -49,17 +54,17 @@ export const Logement = () => {
         </div>
       }
 
-      <div className="dropdownWrapperLogement">
-        <Dropdown
-          className="dropdownStyleLogement"
+      <div className="CollapseWrapperLogement">
+        <Collapse
+          className="CollapseStyleLogement"
           menuName="Description"
           option={[logement.description]}
         />
-        <Dropdown
-          className="dropdownStyleLogement"
+        <Collapse
+          className="CollapseStyleLogement"
           menuName="Equipement"
           option={[
-            <ul>
+            <ul key="equipments-list">
               {logement.equipments.map((equipment, index) => (
                 <li key={index}>{equipment}</li>
               ))}

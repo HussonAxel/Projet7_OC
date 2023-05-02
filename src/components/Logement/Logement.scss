@@ -21,7 +21,7 @@
 
 .listTag {
   background-color: $background-primary;
-  color: $color_2;
+  color: $secondary;
   text-align: center;
   border-radius: 10px;
   width: fit-content;
@@ -69,5 +69,6 @@
   @include mobile {
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;  }
+    justify-content: space-between;
+  }
 }
