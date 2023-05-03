@@ -59,7 +59,7 @@ export const Carrousel = () => {
         </>
       )}
       <p className="carouselIndex">
-        {currentImageIndex + 1}/ {logement.pictures.length}
+        {currentImageIndex + 1} / {logement.pictures.length}
       </p>
     </div>
   );

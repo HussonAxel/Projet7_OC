@@ -22,13 +22,13 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    border-radius: 25px;
     @include mobile {
       height: 245px;
     }
   }
   img.active {
     opacity: 1;
-    border-radius: 25px;
   }
 }
 .buttonCarousel {

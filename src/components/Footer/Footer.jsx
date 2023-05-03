@@ -5,7 +5,6 @@ export const Footer = () => {
     <footer className="footer">
       <Link to={"/"}>
         <svg
-          alt="logo"
           width="125"
           height="70"
           viewBox="0 0 211 68"
