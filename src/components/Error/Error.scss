@@ -3,6 +3,10 @@
   margin-top: 7rem;
   font-size: 18px;
   line-height: 150%;
+  > a {
+    color: $primary;
+    text-decoration: underline;
+  }
 
   @include mobile {
     margin-top: 3rem;
