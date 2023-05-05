@@ -8,10 +8,10 @@ export const Header = () => {
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
       <ul className="listWrapper">
-        <NavLink exact to={"/"} activeClassName="active">
+        <NavLink to={"/"} activeclassname="active">
           <li>Accueil</li>
         </NavLink>
-        <NavLink exact to={"/about"} activeClassName="active">
+        <NavLink to={"/about"} activeclassname="active">
           <li>A Propos</li>
         </NavLink>
       </ul>
