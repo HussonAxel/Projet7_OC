@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 
 export const Header = () => {
   return (
     <nav className="navbar">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <img src={logo} alt="logo" className="logo" />
-      </Link>
+      </NavLink>
       <ul className="listWrapper">
-        <Link to={"/"}>
+        <NavLink exact to={"/"} activeClassName="active">
           <li>Accueil</li>
-        </Link>
-        <Link to={"/about"}>
+        </NavLink>
+        <NavLink exact to={"/about"} activeClassName="active">
           <li>A Propos</li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );
